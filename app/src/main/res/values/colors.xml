@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Wrong">#FF0000</color>
+    <color name="Right">#00FF00</color>
+    <color name="makeflashcards">#013354</color>
+    <color name="studyflashcards">#710101</color>
+    <color name="editflashcards">#0e3601</color>
+    <color name="test">#4c4b02</color>
+    <color name="background">#ffffff</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#fdf7ef</color>
+</resources>

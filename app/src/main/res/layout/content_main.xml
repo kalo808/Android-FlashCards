@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.adotdamo.android.flashcards.MainActivity"
+    android:padding="16dp"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/flash_cards"
+        android:background="@drawable/notecard"
+        android:id="@+id/textView"
+        android:fontFamily="times"
+        android:textSize="40sp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/create_flash_cards"
+            android:id="@+id/makeflashcards"
+            android:background="@drawable/pencil"
+            android:gravity="center_horizontal|bottom"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/edit_flash_cards"
+            android:id="@+id/editflashcards"
+            android:background="@drawable/pen"
+            android:gravity="center_horizontal|bottom"
+            android:layout_weight="1"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/study_flash_cards"
+            android:id="@+id/studyflashcards"
+            android:background="@drawable/notes"
+            android:gravity="center_horizontal|bottom"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/flash_card_test"
+            android:id="@+id/flashcardtest"
+            android:gravity="center_horizontal|bottom"
+            android:background="@drawable/test"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentTop="false">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+
+
